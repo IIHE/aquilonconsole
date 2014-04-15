@@ -1,0 +1,45 @@
+{% extends "templates/layout.jinja2" %}
+
+{% block javascript %}
+<script src="/assets/js/xml.js"></script>
+<script src="/assets/js/pages/commands/az.js"></script>
+<script src="/assets/js/pages/commands/form.js"></script>
+{% endblock %}
+
+{% block content %}
+<div id="pagecommands">
+    <h1>Command A-Z</h1>
+    <br />
+    <div id="legend"></div>
+    <div id="commands" class="container"></div>
+</div>
+
+<div class="modal" id="formdialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <span id="modal-icon"></span><h4 id="modal-title"></h4>
+      </div>
+      <form id="commandform" class="form-horizontal" role="form" action="/">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#modal-body" data-toggle="tab">Command</a></li>
+          <li><a href="#modal-output" data-toggle="tab">Output</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="modal-body"></div>
+          <div class="tab-pane fade" id="modal-output" style="text-align:center">
+            <textarea style="width:90%;height:200px">
+Some output ...
+Some output ...
+Some output ...
+Some output ...
+            </textarea>
+          </div>
+        </div>
+      </form>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
