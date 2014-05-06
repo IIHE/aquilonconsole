@@ -12,7 +12,7 @@ Software
  * Apache 2.2.15
  * Bootstrap 3.1.1
  * jQuery 1.11.0
- * lessc 1.7.0 or greater (for css
+ * lessc 1.7.0 or greater (for css modifications)
 
 
 Deployment
