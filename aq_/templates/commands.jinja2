@@ -1,6 +1,7 @@
 {% extends "templates/layout.jinja2" %}
 
 {% block javascript %}
+<script src="/assets/js/config.js"></script>
 <script src="/assets/js/xml.js"></script>
 <script src="/assets/js/pages/commands/az.js"></script>
 <script src="/assets/js/pages/commands/form.js"></script>
@@ -20,25 +21,23 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <span id="modal-icon"></span><h4 id="modal-title"></h4>
+        <button style="float:right;margin-right:10px;font-size:10px;line-height:1;height:21px" class="glyphicon glyphicon-resize-full close" type="button" onclick="resize()"></button>
       </div>
       <form id="commandform" class="form-horizontal" role="form" action="/">
-        <ul class="nav nav-tabs">
+        <ul id="tabs" class="nav nav-tabs">
           <li class="active"><a href="#modal-body" data-toggle="tab">Command</a></li>
           <li><a href="#modal-output" data-toggle="tab">Output</a></li>
         </ul>
         <div class="tab-content">
-          <div class="tab-pane fade in active" id="modal-body"></div>
-          <div class="tab-pane fade" id="modal-output" style="text-align:center">
-            <textarea style="width:90%;height:200px">
-Some output ...
-Some output ...
-Some output ...
-Some output ...
-            </textarea>
+          <div id="modal-body" class="tab-pane fade in active"></div>
+          <div id="modal-output" class="tab-pane fade">
+            <div id="output-textarea"></div>
           </div>
         </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-primary" value="Submit" />
+        </div>
       </form>
-      <div class="modal-footer"></div>
     </div>
   </div>
 </div>
