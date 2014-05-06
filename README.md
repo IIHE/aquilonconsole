@@ -18,7 +18,7 @@ Software
 Deployment
 ==========
 
-1. Copy the vhost-aquilon.conf to your Apache config directory (eg. /etc/http/conf.d/)
+1- Copy the vhost-aquilon.conf to your Apache config directory (eg. /etc/http/conf.d/)
    and replace the following:
 
  * HOSTNAME   - hostname of machine that will run the Aquilon Console
@@ -27,6 +27,6 @@ Deployment
  * AQUILONURL - URL of you Aquilon server (including port)
  * AQ_DIR     - the full path of this directory
 
-2. Replace the following in aquilonconsole.wsgi:
+2- Replace the following in aquilonconsole.wsgi:
 
  * AQ_DIR     - the full path of this directory
