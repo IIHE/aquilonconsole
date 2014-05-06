@@ -27,6 +27,6 @@ Deployment
  * AQUILONURL - URL of you Aquilon server (including port)
  * AQ_DIR     - the full path of this directory
 
-3. Replace the following in aquilonconsole.wsgi:
+2. Replace the following in aquilonconsole.wsgi:
 
  * AQ_DIR     - the full path of this directory
