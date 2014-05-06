@@ -2,7 +2,7 @@ Aquilon Console
 ===============
 
 The Aquilon Console provides a web based interface to Aquilon providing a 
-command A-Z and   
+command A-Z and tools to optimise workflow.
 
 
 Software
