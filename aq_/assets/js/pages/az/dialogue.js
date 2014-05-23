@@ -206,15 +206,15 @@ function createnotification(option)
             break;
     }
 
-    html += '<button type="button" id="' + name + 'info" class="btn btn-sm btn-info" data-toggle="popover" data-placement="right" data-container="body" data-content="' + infotext + '">\n';
+    html += '<button type="button" id="' + name + 'info" class="btn btn-xs btn-info circle-icon" data-toggle="popover" data-placement="right" data-container="body" data-content="' + infotext + '">\n';
     html += '<span class="glyphicon glyphicon-info-sign"></span>\n';
     html += '</button>\n';
 
-    html += '<button type="button" id="' + name + 'error" class="btn btn-sm btn-danger hide" data-toggle="popover" data-placement="right" data-container="body" data-content="' + errortext + '">\n';
+    html += '<button type="button" id="' + name + 'error" class="btn btn-xs btn-danger hide circle-icon" data-toggle="popover" data-placement="right" data-container="body" data-content="' + errortext + '">\n';
     html += '<span class="glyphicon glyphicon-remove-sign"></span>\n';
     html += '</button>\n';
 
-    html += '<button type="button" id="' + name + 'warning" class="btn btn-sm btn-warning hide" data-toggle="popover" data-placement="right" data-container="body" data-content="' + warningtext + '">\n';
+    html += '<button type="button" id="' + name + 'warning" class="btn btn-xs btn-warning hide circle-icon" data-toggle="popover" data-placement="right" data-container="body" data-content="' + warningtext + '">\n';
     html += '<span class="glyphicon glyphicon-exclamation-sign"></span>\n';
     html += '</button>\n';
 

@@ -71,7 +71,7 @@ function createlegend() {
         html += '<button class="btn btn-xs ' + options[1] + '">';
         html += '<span class="glyphicon ' + options[0] + '"></span>';
         html += '</button>\n';
-        html += ' = ' + prefix + '&nbsp;&nbsp;&nbsp;&nbsp;';            // put spacing in css
+        html += ' = ' + prefix + '&nbsp;&nbsp;&nbsp;&nbsp;'; // TODO: put spacing in css
     });
     $("#legend").append(html);
 }
@@ -125,5 +125,5 @@ function createaz() {
         html += '<br />\n';
     });
     html += '</div></div>\n';
-    $("#commands").append(html);
+    $("#azlist").append(html);
 }

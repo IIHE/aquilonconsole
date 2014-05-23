@@ -1,18 +1,18 @@
 {% extends "templates/layout.jinja2" %}
 
 {% block javascript %}
-<script src="/assets/js/config.js"></script>
-<script src="/assets/js/xml.js"></script>
-<script src="/assets/js/pages/commands/az.js"></script>
-<script src="/assets/js/pages/commands/form.js"></script>
+    <script src="/assets/js/pages/config.js"></script>
+    <script src="/assets/js/pages/az/xml.js"></script>
+    <script src="/assets/js/pages/az/az.js"></script>
+    <script src="/assets/js/pages/az/dialogue.js"></script>
 {% endblock %}
 
 {% block content %}
-<div id="pagecommands">
+<div id="pageaz">
     <h1>Command A-Z</h1>
     <br />
     <div id="legend"></div>
-    <div id="commands" class="container"></div>
+    <div id="azlist" class="container"></div>
 </div>
 
 <div class="modal" id="formdialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
