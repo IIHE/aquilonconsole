@@ -8,8 +8,8 @@ command A-Z and tools to optimise workflow.
 Software
 ========
 
- * Pyramid 1.5b1
- * Apache 2.2.15
+ * CherryPy 3.1.1 + Jinja2
+ * Apache 2.2.15 + mod_wsgi
  * Bootstrap 3.1.1
  * jQuery 1.11.0
  * lessc 1.7.0 or greater (for css modifications)
@@ -18,15 +18,16 @@ Software
 Deployment
 ==========
 
-1- Copy the vhost-aquilon.conf to your Apache config directory (eg. /etc/http/conf.d/)
+1- Install required software
+
+* `yum install httpd git python-setuptools mod_wsgi`
+* `easy_install cherrypy jinja2`
+* `git clone https://github.com/amazerfrazer/aquilonconsole.git`
+
+2- Copy the vhost-aquilon.conf to your Apache config directory (eg. /etc/http/conf.d/)
    and replace the following:
 
- * HOSTNAME   - hostname of machine that will run the Aquilon Console
- * USER       - user to run the Aquilon Console under (root not allowed)
- * GROUP      - group to run the Aquilon Console under (root not allowed)
- * AQUILONURL - URL of you Aquilon server (including port)
- * AQ_DIR     - the full path of this directory
+ * AQ_URL - URL of you Aquilon server (including port)
+ * AQ_DIR - the absolute path of this directory
 
-2- Replace the following in aquilonconsole.wsgi:
-
- * AQ_DIR     - the full path of this directory
+3- Restart Apache. Done.
